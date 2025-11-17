@@ -1,66 +1,29 @@
-## Foundry
+# Upgradeable Rebase Protocol
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+> **Status:** 🚧 Work in Progress - Converting immutable protocol to UUPS upgradeable
 
-Foundry consists of:
+**Sister Project:** [cross-chain-rebasing-protocol](https://github.com/motafegh/cross-chain-rebasing-protocol) (immutable version)
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## What's Different?
 
-## Documentation
+This project demonstrates the **same protocol** but with upgradeability using the UUPS proxy pattern.
 
-https://book.getfoundry.sh/
+### Comparison Table
 
-## Usage
+| Feature | Immutable Version | Upgradeable Version |
+|---------|------------------|---------------------|
+| Trustlessness | ✅ Maximum | ⚠️ Depends on governance |
+| Bug fixes | ❌ Impossible | ✅ Possible via upgrade |
+| Gas cost | ✅ ~95k gas/transfer | ⚠️ ~98k gas/transfer (+3%) |
+| Complexity | ✅ Simple | ⚠️ Complex storage rules |
 
-### Build
+## Progress Tracker
 
-```shell
-$ forge build
-```
+- [ ] Day 1: Convert RebaseToken to V1
+- [ ] Day 2: Implement V2 with new features
+- [ ] Day 3: Testing & Sepolia deployment
+- [ ] Day 4: Documentation polish
 
-### Test
+---
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+*Last updated: [current date]*

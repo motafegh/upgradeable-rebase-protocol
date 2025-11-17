@@ -2,12 +2,12 @@
 pragma solidity 0.8.24;
 
 import {Script, console} from "forge-std/Script.sol";
-import {RebaseToken} from "../src/RebaseToken.sol";
-import {RebaseTokenPool} from "../src/RebaseTokenPool.sol";
-import {Vault} from "../src/Vault.sol";
-import {IRebaseToken} from "../src/interfaces/IRebaseToken.sol";
+import {RebaseToken} from "../../src/archived/RebaseToken.sol";
+import {RebaseTokenPool} from "../../src/upgradable/RebaseTokenPool.sol";
+import {Vault} from "../../src/upgradable/Vault.sol";
+import {IRebaseToken} from "../../src/interfaces/IRebaseToken.sol";
 import {IERC20} from "@ccip/contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol";
-import {HelperConfig} from "./helpers/HelperConfig.s.sol";
+import {HelperConfig} from "../helpers/HelperConfig.s.sol";
 
 // Registry imports
 import {RegistryModuleOwnerCustom} from "@ccip/contracts/src/v0.8/ccip/tokenAdminRegistry/RegistryModuleOwnerCustom.sol";

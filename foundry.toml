@@ -2,10 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-rpc_endpoints = { eth = "https://eth-sepolia.g.alchemy.com/v2/mwHkM74gwkO6kdWQKCYBRWdbDUnhZB7E", arb = "https://arb-sepolia.g.alchemy.com/v2/mwHkM74gwkO6kdWQKCYBRWdbDUnhZB7E", zksync = "https://sepolia.era.zksync.dev"}
-
+solc_version = "0.8.24"
+evm_version = "cancun"
 remappings = [
     '@openzeppelin/=lib/openzeppelin-contracts/',
+    '@openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/',
     '@ccip=lib/ccip/',
     '@chainlink-local/=lib/chainlink-local/',
 ]

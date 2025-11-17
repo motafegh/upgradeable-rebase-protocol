@@ -2,9 +2,9 @@
 pragma solidity 0.8.24;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Vault} from "../src/Vault.sol";
-import {RebaseToken} from "../src/RebaseToken.sol";
-import {RebaseTokenPool} from "../src/RebaseTokenPool.sol";
+import {Vault} from "../../src/upgradable/Vault.sol";
+import {RebaseToken} from "../../src/archived/RebaseToken.sol";
+import {RebaseTokenPool} from "../../src/upgradable/RebaseTokenPool.sol";
 import {IRouterClient} from "@ccip/contracts/src/v0.8/ccip/interfaces/IRouterClient.sol";
 import {Client} from "@ccip/contracts/src/v0.8/ccip/libraries/Client.sol";
 import {IERC20} from "@ccip/contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol";

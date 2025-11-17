@@ -2,9 +2,9 @@
 pragma solidity 0.8.24;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Vault} from "../../src/Vault.sol";
-import {RebaseToken} from "../../src/RebaseToken.sol";
-import {IRebaseToken} from "../../src/interfaces/IRebaseToken.sol";
+import {Vault} from "../../src/upgradable/Vault.sol";
+import {RebaseToken} from "../../src/archived/RebaseToken.sol";
+import {IRebaseToken} from "src/interfaces/IRebaseToken.sol";
 
 /**
  * @title VaultTest

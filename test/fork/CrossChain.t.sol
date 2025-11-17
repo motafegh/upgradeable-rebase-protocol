@@ -7,12 +7,11 @@ import {BurnMintERC677Helper, IERC20} from "@chainlink-local/src/ccip/CCIPLocalS
 import {IRouterClient} from "@ccip/contracts/src/v0.8/ccip/interfaces/IRouterClient.sol";
 import {Client} from "@ccip/contracts/src/v0.8/ccip/libraries/Client.sol";
 
-import {DeployLocal} from "../../script/DeployLocal.s.sol";
-import {ConfigurePool} from "../../script/ConfigurePool.s.sol";
-import {RebaseToken} from "../../src/RebaseToken.sol";
-import {RebaseTokenPool} from "../../src/RebaseTokenPool.sol";
-import {Vault} from "../../src/Vault.sol";
-
+import {DeployLocal} from "../../script/archived/DeployLocal.s.sol";
+import {ConfigurePool} from "../../script/configuration/ConfigurePool.s.sol";
+import {RebaseToken} from "../../src/archived/RebaseToken.sol";
+import {RebaseTokenPool} from "../../src/upgradable/RebaseTokenPool.sol";
+import {Vault} from "../../src/upgradable/Vault.sol";
 /**
  * @title CrossChainTest
  * @notice Fork tests for cross-chain rate preservation via CCIP

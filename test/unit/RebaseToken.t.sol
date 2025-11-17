@@ -2,7 +2,7 @@
 pragma solidity 0.8.24;
 
 import {Test, console} from "forge-std/Test.sol";
-import {RebaseToken} from "../../src/RebaseToken.sol";
+import {RebaseToken} from "../../src/archived/RebaseToken.sol";
 
 /**
  * @title RebaseTokenTest

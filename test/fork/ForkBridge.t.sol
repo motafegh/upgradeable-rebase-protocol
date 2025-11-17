@@ -6,8 +6,8 @@ import {CCIPLocalSimulatorFork, Register} from "@chainlink-local/src/ccip/CCIPLo
 import {IRouterClient} from "@ccip/contracts/src/v0.8/ccip/interfaces/IRouterClient.sol";
 import {Client} from "@ccip/contracts/src/v0.8/ccip/libraries/Client.sol";
 import {IERC20} from "@ccip/contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol";
-import {RebaseToken} from "../../src/RebaseToken.sol";
-import {RebaseTokenPool} from "../../src/RebaseTokenPool.sol";
+import {RebaseToken} from "../../src/archived/RebaseToken.sol";
+import {RebaseTokenPool} from "../../src/upgradable/RebaseTokenPool.sol";
 
 /**
  * @title ForkBridge
